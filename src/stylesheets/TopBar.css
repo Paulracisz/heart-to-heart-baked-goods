@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700;900&display=swap');
+
 .TopBar {
     background-color: rgb(232, 121, 179);
     display: flex;
@@ -5,6 +7,7 @@
     border-radius: 55px;
     border-top: 0px;
     width: 100vw;
+    font-family: 'Dancing Script', cursive;
     height: 100vh;
     /* Create a parallax effect */
      background-attachment: fixed;
@@ -22,16 +25,20 @@
 .center-intro-flex {
     display: flex;
     justify-content: center;
+    font-family: 'Dancing Script', cursive;
     flex-direction: column;
     align-items: center;
 }
 
 .motto {
     font-size: 7em;
+    font-family: 'Dancing Script', cursive;
 }
 
 .title {
     top: 0;
+    opacity: 1;
+    transition: all 0.4s ease;
     position: absolute;
     font-size: 3em;
 }
