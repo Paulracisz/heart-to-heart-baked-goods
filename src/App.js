@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TopBar from "./components/TopBar.jsx";
+import "./stylesheets/TopBar.css";
+import Macarons from "./assets/macarons.png";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <TopBar />
+
+        <img className="macaron-img" src={Macarons} alt="macarons" />
+      </>
     </div>
   );
 }
