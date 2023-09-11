@@ -32,6 +32,14 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="spinning-back">
+          <div className="falling-text-flex">
+            <div id="img1" className="falling-img"></div>
+            <div id="img2" className="falling-img"></div>
+            <div id="img3" className="falling-img"></div>
+            <div id="img4" className="falling-img"></div>
+          </div>
+        </div>
       </>
     </div>
   );
