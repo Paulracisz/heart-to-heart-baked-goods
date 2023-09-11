@@ -37,6 +37,67 @@ body {
   color: #61dafb;
 }
 
+.spinning-back {
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+.falling-text {
+  color: black;
+  line-height: 150px;
+  font-size: 2.5em;
+}
+
+#text1,
+#text3 {
+  align-self: baseline;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  transition: 0.3s all ease;
+}
+
+#text1:hover,
+#text3:hover {
+  background-color: white;
+  border: 5px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+#text2,
+#text4 {
+  align-self: end;
+  transition: 0.3s all ease;
+  padding: 50px;
+}
+
+#text2:hover,
+#text4:hover {
+  background-color: black;
+  border: 5px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.falling-text-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
 body::-webkit-scrollbar {
   width: 1em;
 }
