@@ -5,6 +5,12 @@ import Macarons from "./assets/macarons.png";
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SugarCookie from "./assets/sugarcookie.jpg";
+import Macarons2 from "./assets/macarons2.jpg";
+import HeartMacarons from "./assets/heartmacarons3.jpg";
+import Cake from "./assets/cake.jpg";
+import Facebook from "./assets/facebook.png";
+import Instagram from "./assets/instagram.png";
 
 function App() {
   useEffect(() => {
@@ -33,12 +39,54 @@ function App() {
           </div>
         </div>
         <div className="spinning-back">
-          <div className="falling-text-flex">
-            <div id="img1" className="falling-img"></div>
-            <div id="img2" className="falling-img"></div>
-            <div id="img3" className="falling-img"></div>
-            <div id="img4" className="falling-img"></div>
+          <div className="falling-text-flex-img first-flex">
+            <img
+              id="img1"
+              src={SugarCookie}
+              alt="baked goods"
+              className="falling-img"
+            ></img>
+            <img
+              src={Macarons2}
+              id="img2"
+              alt="baked goods"
+              className="falling-img"
+            ></img>
           </div>
+          <h2 className="middle">Check out our hand-baked treats!</h2>
+          <div className="falling-text-flex-img">
+            <img
+              src={HeartMacarons}
+              id="img3"
+              alt="baked goods"
+              className="falling-img"
+            ></img>
+            <img
+              src={Cake}
+              id="img4"
+              alt="baked goods"
+              className="falling-img"
+            ></img>
+          </div>
+        </div>
+        <div className="spinning-back"></div>
+        <div className="footer">
+          © 2023 Heart To Heart Baked Goods <br />
+          Follow us on social media:
+          <a
+            href="https://www.facebook.com/profile.php?id=100095348257521&mibextid=avESrC"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="socials" src={Facebook} />
+          </a>
+          <a
+            href="https://www.instagram.com/hearttoheartbaked/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="socials" src={Instagram} />
+          </a>
         </div>
       </>
     </div>
