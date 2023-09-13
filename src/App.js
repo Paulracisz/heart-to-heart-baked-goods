@@ -11,6 +11,7 @@ import HeartMacarons from "./assets/heartmacarons3.jpg";
 import Cake from "./assets/cake.jpg";
 import Facebook from "./assets/facebook.png";
 import Instagram from "./assets/instagram.png";
+import { Contact } from "./components/Contact";
 
 function App() {
   useEffect(() => {
@@ -69,7 +70,10 @@ function App() {
             ></img>
           </div>
         </div>
-        <div className="spinning-back"></div>
+        <div className="spinning-back-contact">
+          <h2>Contact Us!</h2>
+          <Contact />
+        </div>
         <div className="footer">
           © 2023 Heart To Heart Baked Goods <br />
           Follow us on social media:

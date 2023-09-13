@@ -1,0 +1,84 @@
+#form-warning-message {
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em
+}
+
+#red-text {
+    color: red;
+    font-weight: bold;
+}
+
+.submit {
+    margin: 20px;
+}
+
+#textinput {
+    height: 4em;
+}
+
+input.submit:hover {
+    filter: brightness(50%);
+    cursor: pointer; 
+}
+
+textarea,
+input {
+    border: 1px solid var(--input-border);
+    height: 2em;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px var(--text-shadow-about);
+}
+
+#emailp {
+    text-shadow: 1px 1px var(--text-shadow-about);
+    color: (var(--email-p))
+}
+
+#contact-box {
+    background: var(--contact-box-gradient);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#contactformbox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 23, 23);
+    border: 5px solid rgb(24,23,23);
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+#contactbox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    width: 100%;
+}
+
+
+/* Media query for screens up to 767px (typical phones) */
+@media screen and (max-width: 767px) {
+    /* Styles for phones and smaller screens */
+    
+    #contactformbox {
+      width: 55%;
+    }
+    
+  }

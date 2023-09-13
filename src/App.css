@@ -169,6 +169,17 @@ body {
   background-repeat: none;
 }
 
+.spinning-back-contact {
+  display: flex;
+  margin-top: 25%;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
 .falling-img:hover {
   background-color: whitesmoke;
   padding: 25px;
@@ -217,6 +228,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
   }
   
+  
+  #contactformbox {
+    width: 55%;
+  }
   
   
   .TopBar {
