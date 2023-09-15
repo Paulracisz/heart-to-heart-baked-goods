@@ -111,9 +111,95 @@ function App() {
         </div>
         <div className="falling-text-flex-menu">
           <h2 className="menu-header">Our Menu</h2>
+          <div className="price-list-flex">
+            <div className="price-list-column-flex column-title">
+              <p>Items</p>
+              <p>Pricing</p>
+            </div>
+            <div className="price-list-column-flex">
+              <p>
+                Basic Cookies (Choc. Chip, Red Velvet, Sugar, Lemon, Carrot)
+              </p>
+              <p>
+                8/$12 <br />
+                *PRICES CAN CHANGE BASED UPON COOKIES WITH FONDANT BASED ON
+                STYLE AND AMOUNT
+              </p>
+            </div>
+            <div className="price-list-column-flex">
+              <p>
+                Basic Cupcakes ( Choc. Chip, Red Velvet, Sugar, Lemon, Carrot)
+              </p>
+              <p>
+                12/$15 24/$32 <br />
+                *PRICES CAN CHANGE BASED UPON CUSTOMIZED CUPCAKES BASED ON STYLE
+                AND AMOUNT
+              </p>
+            </div>
+            <div className="price-list-column-flex">
+              <p>Macarons</p>
+              <p>
+                6/$12
+                <br /> 12/$20
+              </p>
+            </div>
+            <div className="price-list-column-flex">
+              <p>Cakes </p>
+              <p>* Message for pricing</p>
+            </div>
+            <div className="price-list-column-flex">
+              <p>Cake</p>
+              <p>Message For Price</p>
+            </div>
+            <div className="price-list-column-flex">
+              <p>Mini Cheesecake</p>
+              <p>
+                12/$15 <br /> 24/$32
+              </p>
+            </div>
+            <div className="price-list-column-flex">
+              <p>Strawberries</p>
+              <p>
+                6/$12 <br /> 12/$20 **PRICES CAN CHANGE BASED UPON CUSTOMIZED
+                STYLE AND AMOUNT
+              </p>
+            </div>
+            <h2> Treat Table </h2>
+            <hr />
+            <p className="treat-p">
+              {" "}
+              Treat Tables, Party Favors, Wedding Desserts and Etc. Are
+              available. Price starts at $30
+            </p>
+            <p className="treat-p">
+              UPS Shipping : $12.50 or less based upon pacakge weight.
+            </p>
+            <hr />
+            <h2>Contact Info:</h2>
+            <p className="treat-p">Cell: +1(586) - 241 - 2016</p>
+            <p className="treat-p">Email: destonivaughn@gmail.com</p>
+            <p className="treat-p">
+              Socials: <br /> Instagram:
+              <a
+                href="https://www.instagram.com/HearttoHeartBaked"
+                rel="noopener norefferer"
+                target="_blank"
+              >
+                HearttoHeartBaked
+              </a>
+              <br /> Facebook:
+              <a
+                href="https://www.Facebook.com/HearttoHeartBakedGoodies"
+                rel="noopener norefferer"
+                target="_blank"
+              >
+                HearttoHeartBakedGoodies
+              </a>
+            </p>
+            <hr />
+          </div>
           <div className="flex-menu">
-            <img src={Menu} alt="baked goods"></img>
-            <img src={BusinessCard} alt="baked goods"></img>
+            <img src={BusinessCard} alt="baked goods" id="bus-card"></img>
           </div>
         </div>
         <div className="spinning-back-contact">
