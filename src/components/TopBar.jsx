@@ -10,11 +10,20 @@ function TopBar() {
       scrollTrigger: {
         trigger: ".TopBar",
         start: 0,
-        end: 400,
+        end: 600,
         scrub: true,
       },
       borderBottomLeftRadius: "30%",
       borderBottomRightRadius: "30%",
+    });
+    gsap.to(".title", {
+      scrollTrigger: {
+        trigger: ".TopBar",
+        start: 0,
+        end: 10,
+        scrub: true,
+      },
+      opacity: "0",
     });
     gsap.to(".TopBar", {
       scrollTrigger: {
