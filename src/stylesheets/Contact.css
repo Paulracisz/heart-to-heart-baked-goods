@@ -15,12 +15,22 @@
 }
 
 #textinput {
-    height: 4em;
+    height: 8em;
+    width: 16em;
+    min-height: 4em;
+    min-width: 8em;
+    max-width: 25em;
+    max-height: 25em;
 }
 
 input.submit:hover {
     filter: brightness(50%);
     cursor: pointer; 
+}
+
+#strike-through {
+    text-decoration: line-through;
+    margin: 0;
 }
 
 textarea,

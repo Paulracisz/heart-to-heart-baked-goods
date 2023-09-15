@@ -31,7 +31,7 @@
 }
 
 .motto {
-    font-size: 7em;
+    font-size: 8em;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -40,11 +40,11 @@
     opacity: 1;
     transition: all 0.4s ease;
     position: absolute;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .macaron-img {
-    width:55em;
+    width: 55em;
     object-fit: contain;
     margin-top: -40%;
     /* Create a parallax effect */

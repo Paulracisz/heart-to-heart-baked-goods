@@ -1,17 +1,29 @@
+// stylesheets
 import "./App.css";
-import TopBar from "./components/TopBar.jsx";
 import "./stylesheets/TopBar.css";
-import Macarons from "./assets/macarons.png";
+
+// libraries
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// components
+import TopBar from "./components/TopBar.jsx";
+import { Contact } from "./components/Contact";
+
+// images
+import Macarons from "./assets/macarons.png";
 import SugarCookie from "./assets/sugarcookie.jpg";
 import Macarons2 from "./assets/macarons2.jpg";
 import HeartMacarons from "./assets/heartmacarons3.jpg";
 import Cake from "./assets/cake.jpg";
 import Facebook from "./assets/facebook.png";
 import Instagram from "./assets/instagram.png";
-import { Contact } from "./components/Contact";
+import Menu from "./assets/menu.jpg";
+import MacaronsBatch from "./assets/macaronsbatch.jpg";
+import MacaronsBatch2 from "./assets/macaronsbatch2.jpg";
+import CupCakes from "./assets/cupcakes.jpg";
+import BusinessCard from "./assets/businesscard.jpg";
 
 function App() {
   useEffect(() => {
@@ -68,6 +80,40 @@ function App() {
               alt="baked goods"
               className="falling-img"
             ></img>
+          </div>
+        </div>
+        <div className="spinning-back">
+          <h2 className="tag-line" id="strike-through">
+            Our last batch was good...
+          </h2>
+          <h2 className="tag-line">This one is even better.</h2>
+          <div className="falling-text-flex-img new">
+            <img
+              src={MacaronsBatch}
+              id="img3"
+              alt="baked goods"
+              className="falling-img"
+            ></img>
+            <img
+              src={MacaronsBatch2}
+              id="img4"
+              alt="baked goods"
+              className="falling-img"
+            ></img>
+          </div>
+          <div className="falling-text-flex-img new"></div>
+          <img
+            src={CupCakes}
+            id="img3"
+            alt="baked goods"
+            className="falling-img center"
+          ></img>
+        </div>
+        <div className="falling-text-flex-menu">
+          <h2 className="menu-header">Our Menu</h2>
+          <div className="flex-menu">
+            <img src={Menu} alt="baked goods"></img>
+            <img src={BusinessCard} alt="baked goods"></img>
           </div>
         </div>
         <div className="spinning-back-contact">
