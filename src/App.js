@@ -24,16 +24,63 @@ import MacaronsBatch from "./assets/macaronsbatch.jpg";
 import MacaronsBatch2 from "./assets/macaronsbatch2.jpg";
 import CupCakes from "./assets/cupcakes.jpg";
 import BusinessCard from "./assets/businesscard.jpg";
+import Destoni from "./assets/destoni.jpg";
 
 function App() {
+  function toggleHamburgerMenu() {
+    let hamburgerMenu = document.getElementById("hamburger-menu");
+    let hamburger = document.getElementById("hamburger");
+    let hamburgerStick = document.getElementsByClassName("hamburger-stick");
+    hamburgerMenu.hidden = !hamburgerMenu.hidden;
+    if (hamburgerMenu.hidden) {
+      for (let i = 0; i < hamburgerStick.length; i++) {
+        hamburgerStick[i].style.width = "100%";
+        hamburger.style.flexDirection = "column";
+        hamburger.style.justifyContent = "space-between";
+        hamburgerStick[i].style.height = "5px";
+      }
+      // create animation for when the hamburger menu is closed or open
+    } else if (!hamburgerMenu.hidden) {
+      for (let i = 0; i < hamburgerStick.length; i++) {
+        hamburgerStick[i].style.width = "5px";
+        hamburger.style.flexDirection = "row";
+        hamburger.style.justifyContent = "space-around";
+        hamburgerStick[i].style.height = "100%";
+      }
+    }
+  }
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
   }, []);
   return (
     <div className="App">
       <>
+        <div onClick={toggleHamburgerMenu} id="sticky-hamburger">
+          <div id="hamburger">
+            <div className="hamburger-stick"></div>
+            <div className="hamburger-stick"></div>
+            <div className="hamburger-stick"></div>
+            <div id="hamburger-menu" hidden={true}>
+              <a className="hamburger-anchor" href="#top">
+                <div className="hamburger-label">Top</div>
+              </a>
+              <a className="hamburger-anchor" href="#showcase">
+                <div className="hamburger-label">Baked Goods Showcase</div>
+              </a>
+              <a className="hamburger-anchor" href="#meet">
+                <div className="hamburger-label">Meet The Baker</div>
+              </a>
+              <a className="hamburger-anchor" href="#menu">
+                <div className="hamburger-label">Menu</div>
+              </a>
+              <a className="hamburger-anchor" href="#contact">
+                <div className="hamburger-label">Contact</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h2 id="top"></h2>
         <TopBar />
-
         <img className="macaron-img" src={Macarons} alt="macarons" />
         <div className="spinning-back">
           <div className="falling-text-flex">
@@ -66,14 +113,19 @@ function App() {
               className="falling-img"
             ></img>
           </div>
-          <h2 className="middle">Check out our hand-baked treats!</h2>
+          <h2 className="middle" id="showcase">
+            Check out our hand-baked treats!
+          </h2>
           <div className="falling-text-flex-img">
             <img
               src={HeartMacarons}
               id="img3"
               alt="baked goods"
               className="falling-img"
-            ></img>
+            ></img>{" "}
+            <a id="button" href={`/gallery`}>
+              View Gallery
+            </a>
             <img
               src={Cake}
               id="img4"
@@ -109,8 +161,17 @@ function App() {
             className="falling-img center"
           ></img>
         </div>
+        <div className="meet-flex">
+          <h2 className="menu-header" id="meet">
+            Meet The Baker
+          </h2>
+          <img src={Destoni} alt="picture of the baker" className="baker-pic" />
+          <h2 id="baker">Destoni</h2>
+        </div>
         <div className="falling-text-flex-menu">
-          <h2 className="menu-header">Our Menu</h2>
+          <h2 className="menu-header" id="menu">
+            Our Menu
+          </h2>
           <div className="price-list-flex">
             <div className="price-list-column-flex column-title">
               <p>Items</p>
@@ -146,10 +207,6 @@ function App() {
             <div className="price-list-column-flex">
               <p>Cakes </p>
               <p>* Message for pricing</p>
-            </div>
-            <div className="price-list-column-flex">
-              <p>Cake</p>
-              <p>Message For Price</p>
             </div>
             <div className="price-list-column-flex">
               <p>Mini Cheesecake</p>

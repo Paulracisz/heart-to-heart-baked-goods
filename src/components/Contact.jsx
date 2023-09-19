@@ -74,6 +74,7 @@ export const Contact = () => {
 
   return (
     <>
+      <h2 id="contact"></h2>
       <p id="form-warning-message" hidden={true}>
         Please fill out all of the required fields.
         <br /> The required fields are marked in <b id="red-text">red</b>.
