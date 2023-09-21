@@ -7,6 +7,45 @@ body {
   align-items: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#baker {
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 2px black;
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+#baker-desc {
+  width: 50%;
+  font-weight: bold;
+  font-size: large;
+}
+
+#top {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -31,6 +70,49 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#button {
+  width: 200px;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 15px;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  border-radius: 500px;
+  transition: 0.3s all ease;
+  height: 100px;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #848484;
+}
+
+/* Button Styles */
+.gallery-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #e3e4e5;
+  color: black;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-button:hover {
+  background-color: #9a9a9a;
+}
+
+button:active {
+  background-color: yellow;
 }
 
 .App-logo {
@@ -70,13 +152,12 @@ body {
   height: 100%;
 }
 
-
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -131,7 +212,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  height: 50px
+  height: 50px;
 }
 
 .socials {
@@ -170,10 +251,37 @@ body {
   background-color: whitesmoke;
 }
 
-
-#img1, #img2 {
+#img1,
+#img2 {
   align-self: baseline;
   justify-self: end;
+}
+
+.baker-pic {
+  width: 35em;
+  object-fit: cover;
+  padding: 20px;
+  margin: 10px;
+  height: 40em;
+  transition: 0.3s all ease;
+  border-radius: 15px;
+  border: 20px solid black;
+}
+
+.baker-pic:hover {
+  box-shadow: 0 0 60px 30px #fff,
+    /* inner white */ 0 0 100px 60px rgb(200, 194, 10),
+    /* middle magenta */ 0 0 140px 90px rgb(181, 86, 9); /* outer cyan */
+}
+
+.meet-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  color: black;
 }
 
 #img1:hover,
@@ -182,7 +290,8 @@ body {
   padding: 25px;
 }
 
-#img3, #img4 {
+#img3,
+#img4 {
   align-self: end;
   justify-self: start;
 }
@@ -208,7 +317,7 @@ body {
   margin: 0;
 }
 
-.price-list-column-flex>p {
+.price-list-column-flex > p {
   border: 3px solid white;
   padding: 20px;
   min-height: 4em;
@@ -224,8 +333,87 @@ body {
   max-height: 4em;
 }
 
-.column-title>p {
+.column-title > p {
   border-top: 3px solid white;
+}
+
+#sticky-hamburger {
+  position: sticky;
+  top: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all ease;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.518);
+  border-radius: 500px;
+}
+
+#hamburger {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  transition: 0.2s ease all;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-stick {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.2s ease all;
+  background-color: black;
+  height: 5px;
+}
+
+.hamburger-anchor {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-anchor:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+#hamburger-menu {
+  position: absolute;
+  width: 200px;
+  padding: 0;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  top: 70px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.511);
+}
+
+.hamburger-label {
+  border-bottom: 2px solid black;
+  margin: 10px;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px;
+  border-width: 100%;
+}
+
+.hamburger-label:hover {
+  background-color: rgba(143, 143, 143, 0.568);
+}
+
+#hamburger-menu:hover {
+  background-color: white;
+}
+
+#sticky-hamburger:hover {
+  cursor: pointer;
+  background-color: white;
 }
 
 .treat-p {
@@ -233,18 +421,17 @@ body {
   font-weight: bold;
 }
 
-.price-list-column-flex>p:nth-child(odd) {
+.price-list-column-flex > p:nth-child(odd) {
   border-right: none;
 }
 
-.price-list-column-flex>p:last-child {
+.price-list-column-flex > p:last-child {
   border-bottom: 3px solid white;
 }
 
-.price-list-column-flex>p:nth-child(n-2) {
+.price-list-column-flex > p:nth-child(n-2) {
   border-bottom: 3px solid white;
 }
-
 
 .spinning-back-contact {
   display: flex;
@@ -266,11 +453,11 @@ body {
 body::-webkit-scrollbar {
   width: 1.5em;
 }
- 
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: rgb(0, 0, 0);
   outline: 1px solid rgb(0, 0, 0);
@@ -291,46 +478,48 @@ body::-webkit-scrollbar-thumb {
   h2 {
     font-size: 2em !important;
   }
-  
+
   .macaron-img {
     width: 25em !important;
   }
-  
+
   .falling-img {
     width: 50%;
   }
-  
-  
+
   .falling-text {
     line-height: 30px;
     font-size: 1.5em;
   }
-  
-  
+
   #root {
     width: 100vw !important;
   }
-  
+
   .falling-text-flex {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
+  .baker-pic {
+    width: 75% !important;
+  }
+
   .falling-text-flex-menu {
     width: 100%;
   }
-  
+
   .price-list-flex {
     width: 100%;
   }
-  
+
   .price-list-column-flex {
     width: 100%;
   }
-  
-  .price-list-column-flex>p {
+
+  .price-list-column-flex > p {
     font-size: 16px;
     min-width: 10em !important;
     max-width: 10em !important;
@@ -338,26 +527,36 @@ body::-webkit-scrollbar-thumb {
     max-height: 10em !important;
     padding: 10px;
   }
-  
+
   img {
     width: 5em !important;
   }
-  
+
   #bus-card {
     width: 75% !important;
   }
-  
+
   .socials {
     width: 2em !important;
   }
-  
+
   #contactformbox {
     width: 55%;
   }
-  
-  
+
+  .falling-text-flex-img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #img3,
+  #img4 {
+    margin: 15px;
+    align-self: center;
+  }
+
   .TopBar {
     width: 100% !important;
   }
 }
-
