@@ -166,6 +166,15 @@ function App() {
             Meet The Baker
           </h2>
           <img src={Destoni} alt="picture of the baker" className="baker-pic" />
+          <p id="baker-desc">
+            "Hello Guys - if you've found yourself scrolling along this page,
+            then that means you're curious. I love baking, helping others, and
+            taking care of my family. In between being a mom and a wife, I spend
+            a lot of time in the kitchen. It's an awesome way for me to be
+            expressive, and also to share my love through food. It's the gift
+            that keeps on giving- whether desserts, or healthy delectables,
+            we've got you covered."{" "}
+          </p>
           <h2 id="baker">Destoni</h2>
         </div>
         <div className="falling-text-flex-menu">
